@@ -1,0 +1,90 @@
+\documentclass{beamer}
+\usepackage{ctex}
+\usepackage[T1]{fontenc}
+
+% other packages
+% \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+% \usepackage{graphicx,pstricks,listings,stackengine}
+\usepackage{listings}
+\usepackage{multirow}
+
+\author{徐本馨}
+\title{创新实践汇报}
+\subtitle{本周汇报}
+\institute{杭州电子科技大学}
+\date{\today}
+\usepackage{Westlake}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+
+\begin{document}
+
+\kaishu
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.2\linewidth]{pic/eight.jpg}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\section{Transformer、BERT 与知识蒸馏的学习}
+ 
+\begin{frame}{Transformer 简介}
+\begin{itemize}
+    \item \textbf{Transformer 架构的特点}
+        \begin{itemize}
+            \item 自注意力机制（Self-Attention）
+            \item 多头注意力（Multi-Head Attention）
+            \item 位置编码（Positional Encoding）
+            \item 编码器-解码器结构（Encoder-Decoder）
+        \end{itemize}
+    \item \textbf{在自然语言处理中的应用}
+        \begin{itemize}
+            \item 机器翻译（如：BERT-Base, Transformer-XL）
+            \item 文本生成（如：GPT系列）
+            \item 文本分类与情感分析
+            \item 语音识别与合成
+        \end{itemize}
+\end{itemize}
+\end{frame}
+ 
+
+\section{总结与展望}
+\begin{frame}{总结与展望}
+\begin{itemize}
+    \item \textbf{学期学习成果总结}
+        \begin{itemize}
+            \item 掌握了Transformer、BERT与知识蒸馏的基本原理与应用
+            \item 深入了解了SQL注入的原理与防范措施
+            \item 实现了基于BERT的SQL注入检测模型，并尝试使用知识蒸馏技术进行模型压缩
+        \end{itemize}
+    \item \textbf{未来的学习与研究方向}
+        \begin{itemize}
+            \item 进一步优化SQL注入检测模型，提高检测精度与速度
+            \item 探索更多自然语言处理与机器学习技术在网络安全领域的应用
+            \item 深入研究知识蒸馏技术，探索其在其他领域的潜在应用
+        \end{itemize}
+\end{itemize}
+\end{frame}
+ 
+\end{document}
