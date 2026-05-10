@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 try:
-    from pdf2pptx import convert as pdf2pptx_convert
+    from pdf2pptx import convert_pdf2pptx
 except ImportError:
     print("错误: 缺少必要的依赖库。")
     print("请先运行: pip install pdf2pptx")
@@ -50,7 +50,8 @@ def convert_beamer_to_pptx(pdf_path: str, output_path: str = None, dpi: int = 30
     print(f"分辨率: {dpi} DPI")
 
     try:
-        pdf2pptx_convert(str(pdf_path), str(output_path), dpi=dpi)
+        # 转换所有页面 (page_count=None 表示全部)
+        convert_pdf2pptx(str(pdf_path), str(output_path), resolution=dpi, start_page=0, page_count=None)
         print(f"转换成功: {output_path}")
         return str(output_path)
     except Exception as e:

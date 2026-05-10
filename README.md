@@ -8,6 +8,16 @@
 pip install pdf2pptx
 ```
 
+具体版本如下
+
+```
+conda list pdf2ppt
+# packages in environment at C:\Users\86139\anaconda3\envs\pdf2ppt:
+#
+# Name                    Version                   Build  Channel
+pdf2pptx                  1.0.5                    pypi_0    pypi
+```
+
 ## 使用方法
 
 ### 转换单个文件
